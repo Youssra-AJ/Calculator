@@ -14,7 +14,11 @@ function substract(num1, num2) {
 
 console.log(substract(9, 4));
 
+function multiply(num1, num2) {
+    return num1 * num2
+}
 
+console.log(multiply(8, 4));
 
 
 
