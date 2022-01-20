@@ -6,25 +6,21 @@ function add(num1, num2) {
     return num1 + num2
 }
     
-console.log(add(1, 3));
 
 function substract(num1, num2) {
     return num1 - num2
 }
 
-console.log(substract(9, 4));
 
 function multiply(num1, num2) {
     return num1 * num2
 }
 
-console.log(multiply(8, 4));
 
 function divide(num1, num2) {
     return num1 / num2
 }
 
-console.log(divide(16, 8));
 //Create a function called 'operate' that takes an operator(?)
 //and 2 numbers and then calls one of the above functions
 //on the numbers. Meaning, this function 'operate' should
