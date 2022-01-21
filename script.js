@@ -1,21 +1,22 @@
-//Start by writing functions for all the basic math 
-//operations: Add, Substract, Multiply, and Divide.
-//Test them with lots of console.log()!
+//Adition function:
 
 function add(num1, num2) {
     return num1 + num2
 }
-    
+
+//Substraction function;
 
 function substract(num1, num2) {
     return num1 - num2
 }
 
+//Multiplication function:
 
 function multiply(num1, num2) {
     return num1 * num2
 }
 
+//Division function:
 
 function divide(num1, num2) {
     return num1 / num2
@@ -27,8 +28,20 @@ function divide(num1, num2) {
 //be able to either add/substract/multiply/divide any 2 
 //given numbers.
 
+function operate() {
+    let num1 = ""
+    let num2 = ""
+    if (num1 + num2) {
+        return add()
+    } else if (num1 - num2) {
+        return substract()
+    } else if (num1 * num2) {
+        return multiply()
+    } else (num1 / num2) 
+        return divide()
+}
 
-
+console.log(operate())
 
 //Now mving to HTML/CSS, create your calculator with 
 //HTML buttons for each digit, each operation (functions above),
@@ -59,6 +72,18 @@ function divide(num1, num2) {
 
 //Store all the values and call the operate() function
 //on them.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

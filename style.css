@@ -1,0 +1,246 @@
+/*
+- Make your operations a diffrent colour from the keypad
+buttons.
+*/
+.body {
+    background-color: #F0EDCC;
+}
+
+.calc-body {
+    background-color: #02343F;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 400px;
+    height: 490px;
+    box-shadow: 5px 10px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: 80px;
+    
+}
+
+#display {
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+    height: 130px;
+    position: absolute;
+    top: 20px;
+    left: 25px
+
+}
+
+.clear {
+    background-color: #F0EDCC;
+    height: 50px;
+    width: 350px;
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #02343F;
+}
+
+.seven {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 230px;
+    left: 25px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.eight {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 230px;
+    left: 115px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.nine {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 230px;
+    left: 205px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.divide {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 230px;
+    left: 295px;
+    font-size: 25px;    
+    color: #02343F;
+}
+
+.four {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 290px;
+    left: 25px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.five {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 290px;
+    left: 115px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.six {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 290px;
+    left: 205px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.multiply {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 290px;
+    left: 295px;
+    font-size: 25px;    
+    color: #02343F;
+}
+
+.one {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 350px;
+    left: 25px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.two {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 350px;
+    left: 115px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.three {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 350px;
+    left: 205px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.minus {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 350px;
+    left: 295px;
+    font-size: 25px;    
+    color: #02343F;
+}
+
+.decimal {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 410px;
+    left: 25px;
+    font-size: 25px;    
+    color: #02343F;
+}
+
+.zero {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 410px;
+    left: 115px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.equals {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 410px;
+    left: 205px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.plus {
+    background-color: #F0EDCC;
+    border-radius: 8px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 410px;
+    left: 295px;
+    font-size: 20px;    
+    color: #02343F;
+}
+
+.clear:hover, .seven:hover, .eight:hover, .nine:hover, .divide:hover, .four:hover, .five:hover, .six:hover {
+    background-color: #D9D9D6;
+}
+
+.multiply:hover, .one:hover, .two:hover, .three:hover, .minus:hover, .decimal:hover, .zero:hover, .equals:hover, .plus:hover {
+    background-color: #D9D9D6;
+}
