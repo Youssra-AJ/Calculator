@@ -9,28 +9,35 @@
 </head>
 <body class='body'>
     <div class='calc-body'>
-        <div id='display'></div>
-        <button class='clear'>CLEAR</button>
-        <button class='seven'>7</button>
-        <button class='eight'>8</button>
-        <button class='nine'>9</button>
-        <button class='divide'>÷</button>
-        <button class='four'>4</button>
-        <button class='five'>5</button>
-        <button class='six'>6</button>
-        <button class='multiply'>×</button>
-        <button class='one'>1</button>
-        <button class='two'>2</button>
-        <button class='three'>3</button>
-        <button class='minus'>–</button>
-        <button class='decimal'>·</button>
-        <button class='zero'>0</button>
-        <button class='equals'>=</button>
-        <button class='plus'>+</button>
+        <div id='display'>
+            <input id='operation-display'></input>
         </div>
+        <button id='clear' class='btns' value='clear'>CLEAR</button>
+
+        <div class='allbtns'>
+           <button id='seven' class='btns number-btn' value='7'>7</button>
+           <button id='eight' class='btns number-btn' value='8'>8</button>
+           <button id='nine' class='btns number-btn' value='9'>9</button>
+           <button id='divide' class='btns operator-btn' value='÷'>÷</button>
+           <button id='four' class='btns number-btn' value='4'>4</button>
+           <button id='five' class='btns number-btn' value='5'>5</button>
+           <button id='six' class='btns number-btn' value='6'>6</button>
+           <button id='multiply' class='btns operator-btn' value='×'>×</button>
+           <button id='one' class='btns number-btn' value='1'>1</button>
+           <button id='two' class='btns number-btn' value='2'>2</button>
+           <button id='three' class='btns number-btn' value='3'>3</button>
+           <button id='minus' class='btns operator-btn' value='–'>–</button>
+           <button id='decimal' class='btns' value='·'>·</button>
+           <button id='zero' class='btns number-btn' value='0'>0</button>
+           <button id='equals' class='btns equals' value='='>=</button>
+           <button id='plus' class='btns operator-btn' value='+'>+</button>
+        </div>
+    
+           
+    </div>
         
 
-    </div>
+    
     
 
     <script src='script.js'></script>

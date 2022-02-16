@@ -1,97 +1,110 @@
-//Adition function:
-
 function add(num1, num2) {
-    return num1 + num2
+    return Number(num1) + Number(num2);
 }
-
-//Substraction function;
 
 function substract(num1, num2) {
-    return num1 - num2
+    return Number(num1) - Number(num2);
 }
-
-//Multiplication function:
 
 function multiply(num1, num2) {
-    return num1 * num2
+    if (num2 === "") {
+        return Number(num1);
+    } else { 
+    return Number(num1) * Number(num2);
+    }
 }
-
-//Division function:
 
 function divide(num1, num2) {
-    return num1 / num2
+    return Number(num1) / Number(num2);
 }
 
-//Create a function called 'operate' that takes an operator(?)
-//and 2 numbers and then calls one of the above functions
-//on the numbers. Meaning, this function 'operate' should
-//be able to either add/substract/multiply/divide any 2 
-//given numbers.
-
-function operate() {
-    let num1 = ""
-    let num2 = ""
-    if (num1 + num2) {
-        return add()
-    } else if (num1 - num2) {
-        return substract()
-    } else if (num1 * num2) {
-        return multiply()
-    } else (num1 / num2) 
-        return divide()
+//Operate() function:
+function operate(operator, num1, num2) {
+     
+    if (operator == '+') {
+        return add(num1, num2);
+    } else if (operator == '-') {
+        return substract(num1, num2);
+    } else if (operator == '*') {
+        return multiply(num1, num2);
+    } else if (operator == '/') {
+        return divide(num1, num2);
+    }
 }
 
-console.log(operate())
+let displayValue = "0";
+let operator = "";
+let number1 = "0";
+let number2 = "";
+let result = "";
+const errorMsg = "You can't divide by 0";
 
-//Now mving to HTML/CSS, create your calculator with 
-//HTML buttons for each digit, each operation (functions above),
-//and equals sign. Fill in the buttons with some light 
-//styling to get a picture of what you're building. 
-//Don't worry about the JS part of this.
-//Add "clear" button.
+//CLEAR Button:  
+const clearButton = document.querySelector('#clear');
+clearButton.addEventListener('click', () => {
+    display.textContent = "";
+    number1 = "0";
+    operator = "";
+    displayValue = display.textContent;
+})
 
+const display = document.getElementById('display');
+const numberButtons = document.querySelectorAll('.number-btn');
+const operatorBtn = document.querySelectorAll('.operator-btn');
+const equalsBtn = document.querySelector('.equals');
 
-
-//Create the functions that populate the display when
-//you click the number buttons. Meaning, you should 
-//make the functionality that displays whatever user 
-//clicks on. Add 'display value' as variable and store it
-//in global scope to use for next steps.
-
-
-
-
-//After you create the code that populates the display,
-//it's times to make the calculator do its job.
-//When the operate() function has been called, your
-//display should show the 'solution'. Stitch it all 
-//together.
-
-
-
-
-//Store all the values and call the operate() function
-//on them.
-
-
-
-
-
-
-
-
-
-
-
+numberButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const input = button.textContent;
+        if (
+            (input != 0 && number1 == 0 && operator == "") ||
+            number1 == result ||
+            display.textContent == errorMsg
+        ) {
+            display.textContent = "";
+            display.textContent += input;
+            displayValue = display.textContent;
+            number1 = display.textContent;
+        } else if (display.textContent != 0) {
+            display.textContent += input;
+            displayValue = display.textContent;
+            number1 = display.textContent;
+        }
+    });
+});
 
 
+operatorBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (operator === "" && display.textContent != errorMsg) {
+        operator = button.textContent;
+        number1 = displayValue;
+        display.textContent += ` ${operator} `;
+        displayValue = display.textContent;
+      }
+    });
+  });
 
-
-
-//BUGS TO LOOK OUT FOR: 
-//Users should be able to string together several
-//operations and get the answer right.
-//Round answers that have long decimals cause we don't
-//want them to take up screen space.
-//Display an error message if the user tries to divide by
-//zero! Don't let it crush your calculator!
+equalsBtn.addEventListener("click", () => {
+    if (operator == "" && display.textContent != result) {
+        display.textContent = displayValue;
+    } else if (display.textContent == result) {
+        display.textContent = result;
+    } else {
+        let arrays = displayValue.split(" ");
+        number1 = arrays[0];
+        operator = arrays[1];
+        number2 = arrays[2];
+        result = operate(operator, number1, number2);
+        console.log(result);
+        if (result == "Infinity" || Number.isNaN(result) === true) {
+            number1 = "0";
+            display.textContent = errorMsg;
+            operator = "";
+        } else {
+            number1 = result;
+            display.textContent = number1;
+            operator = "";
+        }
+    }
+});

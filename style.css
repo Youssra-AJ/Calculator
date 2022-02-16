@@ -16,7 +16,7 @@ buttons.
     margin: auto;
     display: flex;
     position: relative;
-    top: 80px;
+    top: 60px;
     
 }
 
@@ -29,11 +29,21 @@ buttons.
     height: 130px;
     position: absolute;
     top: 20px;
-    left: 25px
-
+    left: 25px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    direction: ltr;
+    
 }
 
-.clear {
+#operation-display {
+    width: 0px;
+    height: 0px;
+    display: none;
+    
+}
+
+#clear {
     background-color: #F0EDCC;
     height: 50px;
     width: 350px;
@@ -45,7 +55,7 @@ buttons.
     color: #02343F;
 }
 
-.seven {
+#seven {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -57,7 +67,7 @@ buttons.
     color: #02343F;
 }
 
-.eight {
+#eight {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -69,7 +79,7 @@ buttons.
     color: #02343F;
 }
 
-.nine {
+#nine {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -81,7 +91,7 @@ buttons.
     color: #02343F;
 }
 
-.divide {
+#divide {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -93,7 +103,7 @@ buttons.
     color: #02343F;
 }
 
-.four {
+#four {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -105,7 +115,7 @@ buttons.
     color: #02343F;
 }
 
-.five {
+#five {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -117,7 +127,7 @@ buttons.
     color: #02343F;
 }
 
-.six {
+#six {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -129,7 +139,7 @@ buttons.
     color: #02343F;
 }
 
-.multiply {
+#multiply {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -141,7 +151,7 @@ buttons.
     color: #02343F;
 }
 
-.one {
+#one {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -153,7 +163,7 @@ buttons.
     color: #02343F;
 }
 
-.two {
+#two {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -165,7 +175,7 @@ buttons.
     color: #02343F;
 }
 
-.three {
+#three {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -177,7 +187,7 @@ buttons.
     color: #02343F;
 }
 
-.minus {
+#minus {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -189,7 +199,7 @@ buttons.
     color: #02343F;
 }
 
-.decimal {
+#decimal {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -201,7 +211,7 @@ buttons.
     color: #02343F;
 }
 
-.zero {
+#zero {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -213,7 +223,7 @@ buttons.
     color: #02343F;
 }
 
-.equals {
+#equals {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -225,7 +235,7 @@ buttons.
     color: #02343F;
 }
 
-.plus {
+#plus {
     background-color: #F0EDCC;
     border-radius: 8px;
     height: 50px;
@@ -237,10 +247,10 @@ buttons.
     color: #02343F;
 }
 
-.clear:hover, .seven:hover, .eight:hover, .nine:hover, .divide:hover, .four:hover, .five:hover, .six:hover {
+#clear:hover, #seven:hover, #eight:hover, #nine:hover, #divide:hover, #four:hover, #five:hover, #six:hover {
     background-color: #D9D9D6;
 }
 
-.multiply:hover, .one:hover, .two:hover, .three:hover, .minus:hover, .decimal:hover, .zero:hover, .equals:hover, .plus:hover {
+#multiply:hover, #one:hover, #two:hover, #three:hover, #minus:hover, #decimal:hover, #zero:hover, #equals:hover, #plus:hover {
     background-color: #D9D9D6;
 }
